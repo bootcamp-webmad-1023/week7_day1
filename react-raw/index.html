@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add React to a Website</title>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        var root = ReactDOM.createRoot(document.getElementById('root'));
+
+        var header = (
+            <div>
+
+                <nav>
+                    <img id="nav-img" src="https://bit.ly/3AwQRV1" />
+                    <p>Hello React</p>
+                </nav>
+
+                <div>
+                    <h2>REACT INTRODUCTION</h2>
+                </div>
+
+                <a href="https://reactjs.org">
+                    <button className="btn">BUTTON</button>
+                </a>
+
+                <h2>Hey alberto jeje</h2>
+
+                <div id="gallery">
+                    <h2>GALLERY</h2>
+                    <img src="https://bit.ly/3iMeumb" />
+                    <img src="https://bit.ly/3iLPn32" />
+                    <img src="https://bit.ly/3BrDAhE" />
+                    <img src="https://bit.ly/3lsRQkz" />
+                </div>
+            </div>
+        )
+
+        root.render(header)
+
+
+    </script>
+</body>
+
+</html>
